@@ -22,6 +22,7 @@
         font-size: .9rem;
         width: 90%;
         align-self: flex-start;
+        color: $desaturatedBlue;
     }
     .section__button{
         display: flex;
@@ -72,6 +73,7 @@
         .card__paragraph{
             font-size: .65rem;
             line-height: 1.8;
+            color: $veryDarkBlue;
         }
         .user{
             display: flex;
@@ -101,6 +103,7 @@
                 font-size: .4rem;
                 font-weight: 700;
                 font-family: $fontFamilyBody;
+                color: $veryDarkBlue;
             }
         }
     }
