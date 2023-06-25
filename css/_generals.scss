@@ -1,0 +1,33 @@
+:root{
+    font-size: $fontSize;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $fontFamilyBody;
+    font-size: 1rem;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+button{
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+header, main, section, form, footer{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    width: 90%;
+    gap: 1rem;
+}
