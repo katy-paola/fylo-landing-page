@@ -7,9 +7,12 @@
     box-sizing: border-box;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: $fontFamilyBody;
     font-size: 1rem;
-    background-color: white;
+    background-color: rgb(232, 231, 231);
 }
 a{
     text-decoration: none;
@@ -30,4 +33,7 @@ header, main, section, form, footer{
 form{
     width: 90%;
     gap: 1rem;
+}
+.content{
+    display: contents;
 }
