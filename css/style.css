@@ -86,13 +86,13 @@ form {
   color: hsl(243, 87%, 12%);
 }
 .main .main__figure {
-  width: 100%;
+  width: 90%;
 }
 .main .main__figure .main__illustration {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .main .main__title {
   font-size: 1.5rem;
@@ -109,25 +109,25 @@ form {
   border-radius: 0.25rem;
   border: none;
   padding: 0.7rem 1.2rem;
+  font-family: "Raleway", sans-serif;
 }
 .main .form .form__input {
   border: 1px solid hsl(238, 22%, 44%);
 }
 .main .form .form__input::-moz-placeholder {
-  font-family: "Open Sans", sans-serif;
   color: hsl(0, 0%, 75%);
+  font-family: "Raleway", sans-serif;
 }
 .main .form .form__input::placeholder {
-  font-family: "Open Sans", sans-serif;
   color: hsl(0, 0%, 75%);
+  font-family: "Raleway", sans-serif;
 }
 .main .form .form__button {
   background-color: hsl(224, 93%, 58%);
   color: white;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
-.main :not(.main__wave) {
+.main :not(.main__wave, .main__figure) {
   padding-left: 1.3rem;
   padding-right: 1.3rem;
 }
@@ -140,7 +140,7 @@ form {
   content: "";
   position: absolute;
   width: 100%;
-  height: 53px;
+  height: 100%;
   left: 0;
   bottom: 0;
   background-image: url("../images/bg-curve-mobile.svg");
@@ -153,6 +153,7 @@ form {
   align-items: center;
   gap: 1rem;
   padding: 1.5rem;
+  padding-bottom: 5rem;
   background-color: hsl(240, 75%, 98%);
 }
 .section:nth-of-type(1) .section__figure {
@@ -256,4 +257,93 @@ form {
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   color: hsl(243, 87%, 12%);
+}
+
+.section:nth-of-type(2) {
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 4.5rem 2.8rem;
+  background-color: hsl(238, 22%, 44%);
+}
+.section:nth-of-type(2) .section__subtitle {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+.section:nth-of-type(2) .section__paragraph {
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.5;
+  color: #fff;
+}
+.section:nth-of-type(2) .form--small {
+  gap: 0.5rem;
+  width: 80%;
+}
+.section:nth-of-type(2) .form--small .form__input, .section:nth-of-type(2) .form--small .form__button {
+  border: none;
+  border-radius: 0.15rem;
+  padding: 0.5rem;
+  font-family: "Raleway", sans-serif;
+}
+.section:nth-of-type(2) .form--small .form__input::-moz-placeholder {
+  color: hsl(0, 0%, 75%);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+}
+.section:nth-of-type(2) .form--small .form__input::placeholder {
+  color: hsl(0, 0%, 75%);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+}
+.section:nth-of-type(2) .form--small .form__button {
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.footer {
+  padding: 4rem 2.8rem;
+  background-color: hsl(243, 87%, 12%);
+  gap: 2rem;
+}
+.footer .footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+}
+.footer .footer__contact .footer__phone, .footer .footer__contact .footer__email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer .footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+.footer .footer__list .footer__link {
+  color: white;
+}
+.footer .footer__social-media {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.footer .footer__social-media .footer__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.footer .footer__author {
+  text-align: center;
+  color: white;
+}
+.footer .footer__author .footer__link {
+  color: white;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

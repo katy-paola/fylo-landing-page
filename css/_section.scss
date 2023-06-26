@@ -2,6 +2,7 @@
     align-items: center;
     gap: 1rem;
     padding: 1.5rem;
+    padding-bottom: 5rem;
     background-color: $lightGrayishBlue;
     .section__figure{
         display: flex;
@@ -105,6 +106,48 @@
                 font-family: $fontFamilyBody;
                 color: $veryDarkBlue;
             }
+        }
+    }
+}
+.section:nth-of-type(2){
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 4.5rem 2.8rem;
+    background-color: $desaturatedBlue;
+
+    .section__subtitle{
+        font-size: 1.2rem;
+        color: #fff;
+        font-weight: 600;
+        font-family: $fontFamilyHead;
+    }
+    .section__paragraph{
+        font-size: .9rem;
+        text-align: center;
+        line-height: 1.5;
+        color: #fff;
+    }
+    .form--small{
+        gap: .5rem;
+        width: 80%;
+
+        .form__input, .form__button{
+            border: none;
+            border-radius: .15rem;
+            padding: .5rem;
+            font-family: $fontFamilyHead;
+        }
+        .form__input::placeholder{
+            color: $lightGray;
+            font-family: $fontFamilyHead;
+            font-size: .7rem;
+        }
+        .form__button{
+            background-color: $brightBlue;
+            color: white;
+            font-weight: 600;
+            font-size: .7rem;
         }
     }
 }
